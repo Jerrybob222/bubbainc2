@@ -1,0 +1,75 @@
+
+body{
+    margin:0;
+    padding-top:60px;
+    font-family:Arial;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background:#333;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 20px;
+    box-sizing:border-box;
+
+    z-index:9999;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.home img{
+    height:40px;
+    width:auto;
+}
+
+.site-name{
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Hide animation */
+
+.hidden{
+    transform:translateY(-100%);
+    transition:transform 0.3s;
+}
+
+/* Toggle button */
+
+#toggleBtn{
+    position:fixed;
+    top:10px;
+    right:10px;
+
+    background:#555;
+    border:none;
+    color:white;
+    padding:8px 14px;
+    cursor:pointer;
+    border-radius:5px;
+
+    z-index:10000;
+}
+
+/* Game iframe */
+
+.game-frame{
+    width:100%;
+    height:calc(100vh - 60px);
+    border:none;
+}
