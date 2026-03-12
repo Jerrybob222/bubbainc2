@@ -73,3 +73,30 @@ body{
     height:calc(100vh - 60px);
     border:none;
 }
+
+
+
+
+
+
+
+
+
+/* button for apps */
+
+.mathbutton{
+    display:inline-block;
+    background:#002faf;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    font-size:18px;
+    border-radius:8px;
+    transition:0.2s;
+}
+
+.mathbutton:hover{
+    background:#2300a0;
+    transform:scale(1.05);
+}
+
