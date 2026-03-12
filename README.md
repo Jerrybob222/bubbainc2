@@ -1,4 +1,0 @@
-# studio code
-
-yes
- 
