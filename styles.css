@@ -75,15 +75,6 @@ body{
 }
 
 
-.mascot {
-    display:block;
-text-align: right;
-margin-bottom: 10px;}
-
-
-.mascot img{
-width:200px;
-}
 
 
 
@@ -113,3 +104,5 @@ width:200px;
     border-width:0;
     color:gray;
     background-color:gray}
+
+
