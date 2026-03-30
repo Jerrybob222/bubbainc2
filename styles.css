@@ -86,12 +86,12 @@ body{
 /* button for apps */
 
 .row-seperator { display: grid;
-grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-gap:15px;}
+grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+gap:10px;}
 
 .mathbutton {
     display: block;        /* ensures left-aligned and stacked */
-    width: fit-content;
+    width: 200px;
     margin: 10px 0;
     background: #002faf;
     color: white;
