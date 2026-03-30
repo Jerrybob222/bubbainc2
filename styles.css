@@ -83,23 +83,25 @@ body{
 
 /* button for apps */
 
-.mathbutton{
-    display: block;
+
+.mathbutton {
+    display: block;        /* ensures left-aligned and stacked */
     width: fit-content;
+    margin: 10px 0;
     background: #002faf;
     color: white;
     padding: 15px 25px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 8px;
-    margin:10px 0;
     transition: 0.2s;
 }
 
-.mathbutton:hover{
-    background:#2300a0;
-    transform:scale(1.05);
-  
+.mathbutton:hover {
+    background: #2300a0;
+    transform: scale(1.05);
+}
+
 
 
 
@@ -113,12 +115,22 @@ body{
     background-color:gray
 }
 
+
+
 .mascot {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
+    display:block;
+text-align: right;
+margin-bottom: 10px;
 }
 
 
-.mascot img { width: 150 px;}
-height: auto;
+
+
+.mascot { display: flex;
+justify-content: flex-end;
+
+}
+
+.mascot img{
+width:200px;
+}
