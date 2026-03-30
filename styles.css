@@ -91,16 +91,18 @@ gap: 20px;
 justify-content: center;
 }
 
+
 .mathbutton {
-    display: block;        /* ensures left-aligned and stacked */
-    width: 200px;
-    margin: 10px 0;
+    display: block;          /* ensures block layout */
+    width: 150px;            /* fixed width */
+    height: 60px;            /* fixed height */
+    line-height: 60px;       /* vertically centers the text */
+    text-align: center;       /* horizontally centers the text */
     background: #002faf;
     color: white;
-    padding: 15px 25px;
+    border-radius: 8px;
     text-decoration: none;
     font-size: 18px;
-    border-radius: 8px;
     transition: 0.2s;
 }
 
