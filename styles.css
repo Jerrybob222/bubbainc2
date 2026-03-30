@@ -86,8 +86,10 @@ body{
 /* button for apps */
 
 .row-seperator { display: grid;
-grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-gap:10px;}
+grid-template-columns: repeat(auto-fill, 150px);
+gap: 20px;
+justify-content: center;
+}
 
 .mathbutton {
     display: block;        /* ensures left-aligned and stacked */
