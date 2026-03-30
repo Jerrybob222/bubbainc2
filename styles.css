@@ -75,7 +75,15 @@ body{
 }
 
 
+.mascot {
+    display:block;
+text-align: right;
+margin-bottom: 10px;}
 
+
+.mascot img{
+width:200px;
+}
 
 
 
