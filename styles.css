@@ -192,3 +192,11 @@ padding:0 10px;
 }
 
  
+.bgm {
+    background-image: url("images/bgimg.jpg");
+    background-size: cover;        /* fills the area nicely */
+    background-position: center;   /* keeps it centered */
+    background-repeat: no-repeat;
+
+    padding: 20px; /* space so content isn't cramped */
+}
