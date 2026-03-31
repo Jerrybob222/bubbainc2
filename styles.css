@@ -200,10 +200,19 @@ padding:0 10px;
 
     padding: 20px; /* space so content isn't cramped */
 }
-body {
-    color:white;
+
+
+
+/* SITE SETTINGS */
+
+
+html, body {
+    background-color: #000000;
+    color: white;
 }
 
+
+/* End  */
 .linev2
 {height:5px;
     border-width:0;
