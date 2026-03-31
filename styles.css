@@ -86,15 +86,19 @@ body{
 /* button for apps */
 
 .row-seperator { display: grid;
-grid-template-columns: repeat(auto-fill, 150px);
-gap: 50px;
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+gap: 20px;
 justify-content: center;
+width: 100%;
+box-sizing:border-box;
+padding:0 10px;
 }
 
 
 .mathbutton {
     display: block;          /* ensures block layout */
-    width: 200px;            /* fixed width */
+    width: 100%;
+    max-width: 200 px;            /* fixed width */
     height: 40px;            /* fixed height */
     line-height: 40px;       /* vertically centers the text */
     text-align: center;       /* horizontally centers the text */
