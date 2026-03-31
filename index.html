@@ -32,7 +32,7 @@
 
     </div>
 <div class="nav-right">
-<button href="info.html" class="nav-button onclick="cloak()">cloak</button>
+<button href="info.html" class="nav-button" onclick="cloak()">cloak</button>
 </div>
 </div>
 
@@ -44,14 +44,14 @@
 <!-- SCRIPTS OF MAIN PAGE v v v v -->
 
 <script> 
-function cloak() { document.title = "New Tab";}
+function cloak() { document.title = "New Tab";
 
 let icon = 
 document.querySelector("link[rel~='icon']"
 );
 
 icon.href = "images/psicon.png";
-
+}
 
 
 
