@@ -200,3 +200,13 @@ padding:0 10px;
 
     padding: 20px; /* space so content isn't cramped */
 }
+body {
+    color:white;
+}
+
+.linev2
+{height:5px;
+    border-width:0;
+    color:rgb(211, 211, 211);
+    background-color:rgb(197, 197, 197);
+}
