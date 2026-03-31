@@ -94,15 +94,15 @@ justify-content: center;
 
 .mathbutton {
     display: block;          /* ensures block layout */
-    width: 150px;            /* fixed width */
-    height: 60px;            /* fixed height */
+    width: 200px;            /* fixed width */
+    height: 30px;            /* fixed height */
     line-height: 60px;       /* vertically centers the text */
     text-align: center;       /* horizontally centers the text */
     background: #002faf;
     color: white;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     transition: 0.2s;
 }
 
@@ -142,4 +142,24 @@ justify-content: flex-end;
 
 .mascot img{
 width:200px;
+}
+
+
+.mascotbutton {
+    display: inline-block;
+    width: 100%;              /* takes the width of the parent (.mascot) */
+    text-align: center;       /* centers the text */
+    background: #002faf;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 0;           /* vertical padding */
+    margin-top: 10px;         /* spacing under image */
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.mascotbutton:hover {
+    background: #2300a0;
+    transform: scale(1.05);
 }
