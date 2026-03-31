@@ -163,7 +163,8 @@ padding:0 10px;
     display: flex;
     flex-direction: column; /* stack image and button vertically */
     align-items: flex-end;  /* right-align */
-    margin-bottom: 15px;
+    margin-bottom:50px;
+    padding-right: 20px;
 }
 
 .mascot img {
