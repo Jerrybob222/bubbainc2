@@ -167,14 +167,14 @@ padding:0 10px;
 }
 
 .mascot img {
-    width: 200px; /* or any responsive width */
+    width: 300px; /* or any responsive width */
     max-width: 100%;
     height: auto;
 }
 
 .mascotbutton {
     display: block;
-    width: 200px;              /* takes the width of the parent (.mascot) */
+    width: 300px;              /* takes the width of the parent (.mascot) */
     text-align: center;       /* centers the text */
     background: #002faf;
     color: white;
