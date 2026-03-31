@@ -44,12 +44,42 @@ body{
     font-weight:bold;
 }
 
+
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* button styling */
+.nav-button {
+    background: #002faf;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px; /* spacing from edge */
+    transition: 0.2s;
+}
+
+
+
+
+
+
 /* Hide animation */
 
 .hidden{
     transform:translateY(-100%);
     transition:transform 0.3s;
 }
+
+
+
+
+
 
 /* Toggle button */
 
@@ -68,7 +98,7 @@ body{
     z-index:9930;
 }
 
-/* Game iframe */
+/* Gme iframe */
 
 .lesson-frame{
     width:100%;
