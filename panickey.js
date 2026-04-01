@@ -22,8 +22,10 @@ document.addEventListener('keydown', function(event) {
   // If user presses the bound key while holding Shift, allow rebinding
   if (event.key === redirectKey && event.shiftKey) {
     const newKey = prompt("Enter a new key to use:").trim();
+  }
+
     if (newKey) {
       redirectKey = newKey;
       localStorage.setItem('redirectKey', redirectKey);
-      alert(`Your key is now set to "${redirectKey}"`);
+      alert(`Your key is now set to "${redirectKey}"`); 
     }
