@@ -1,27 +1,27 @@
-
 // keyRedirect.js
 
-// Check if a key is already saved in localStorage
-let redirectKey = localStorage.getItem('redirectKey') || '`'; // Default to backtick
+// Get saved key from localStorage (null if not set yet)
+let redirectKey = localStorage.getItem('redirectKey');
+
 document.addEventListener('keydown', function(event) {
-  // If no key is saved yet (shouldn’t happen here because we defaulted)
+  // First time: prompt the user to set a key
   if (!redirectKey) {
-    redirectKey = prompt("Press to panic").trim();
+    redirectKey = prompt("Press the key you want to use to go to Google:").trim();
     if (redirectKey) {
       localStorage.setItem('redirectKey', redirectKey);
-      alert(`Your key is set to "${redirectKey}". Press for clever`);
+      alert(`Your key is set to "${redirectKey}". Press it to go to Google!`);
     }
-    return;
+    return; // Don’t redirect on this first key press
   }
 
-  // Redirect if the user presses the bound key
+  // Redirect if the saved key is pressed
   if (event.key === redirectKey) {
-    window.location.href = 'https://clever.com/login';
+    window.location.href = 'https://www.google.com';
   }
 
-  // Optional: Rebind if Shift is pressed with the current key
+  // Optional: Rebind if Shift + key
   if (event.key === redirectKey && event.shiftKey) {
-    const newKey = prompt("Enter a key on your keyboard").trim();
+    const newKey = prompt("Enter a new key to use:").trim();
     if (newKey) {
       redirectKey = newKey;
       localStorage.setItem('redirectKey', redirectKey);
