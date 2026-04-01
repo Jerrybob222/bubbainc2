@@ -6,7 +6,7 @@ let redirectKey = localStorage.getItem('redirectKey');
 document.addEventListener('keydown', function(event) {
   // First time: prompt the user to set a key
   if (!redirectKey) {
-    redirectKey = prompt("Press the key you want to use as a panic button").trim();
+    redirectKey = prompt("Press a key to bind").trim();
     if (redirectKey) {
       localStorage.setItem('redirectKey', redirectKey);
       alert(`Your key is set to "${redirectKey}". Press to leave!`);
@@ -22,10 +22,10 @@ document.addEventListener('keydown', function(event) {
   // If user presses the bound key while holding Shift, allow rebinding
   if (event.key === redirectKey && event.shiftKey) {
     const newKey = prompt("Enter a new key to use:").trim();
-  }
-
     if (newKey) {
       redirectKey = newKey;
       localStorage.setItem('redirectKey', redirectKey);
-      alert(`Your key is now set to "${redirectKey}"`); 
+      alert(`Your key is now set to "${redirectKey}"`);
     }
+  }
+});
