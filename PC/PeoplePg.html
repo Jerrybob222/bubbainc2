@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html>
-<!-----nav bar begaining-->
+
 <head>
 
  <link rel="icon" href="/images/favicon.png" type="image/png">
@@ -13,27 +13,30 @@
 </head>
 
 <body>
-
-
 <div class="navbar" id="navbar">
-
-
     <div class="nav-left">
-
         <a href="/index.html" class="home">
             <img src="/navbaricon.jpg" alt="Home">
         </a>
-
         <span class="site-name">Bubba incorporated™</span>
-
     </div>
 
+    <!-- cloak button -->
+<div class="nav-right">
+<button href="/info.html" class="nav-button" onclick="cloak()">cloak</button>
 </div>
-
-<button id="toggleBtn" onclick="toggleNav()">Hide</button>
-<script src="/script.js"></script>
-
+</div>
+<!-- SCRIPT FOR BUTTON -->
+<script> 
+function cloak() { document.title = "New Tab";
+let icon = 
+document.querySelector("link[rel~='icon']"
+);
+icon.href = "images/psicon.png";
+}
+</script>
 <!---end of nav bar-->
+
 
 
 
