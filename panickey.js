@@ -9,7 +9,7 @@ const rebindTriggerKey = '`';
 document.addEventListener('keydown', function(event) {
   // If user presses the backtick (`), allow rebinding
   if (event.key === rebindTriggerKey) {
-    const newKey = prompt("Press the key you want to use to go to Google:").trim();
+    const newKey = prompt("Press the key you want to use").trim();
     if (newKey) {
       redirectKey = newKey;
       localStorage.setItem('redirectKey', redirectKey);
@@ -20,6 +20,6 @@ document.addEventListener('keydown', function(event) {
 
   // If user presses the bound key, redirect
   if (redirectKey && event.key === redirectKey) {
-    window.location.href = 'https://www.google.com';
+    window.location.href = 'https://clever.com/login';
   }
 });
