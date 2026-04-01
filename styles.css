@@ -115,30 +115,45 @@ body{
 
 /* button for apps */
 
-.row-seperator { display: grid;
-grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-gap: 20px;
-justify-content: center;
-width: 100%;
-box-sizing:border-box;
-padding:0 10px;
+
+.row-seperator {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* responsive columns */
+    gap: 20px;
+    justify-items: center;  /* centers each button */
+    width: 100%;
+    padding: 10px;          /* optional side padding */
+    box-sizing: border-box;
 }
 
 
+
+
 .mathbutton {
-    display: block;          /* ensures block layout */
-    width: 100%;
-    max-width: 200 px;            /* fixed width */
-    height: 40px;            /* fixed height */
-    line-height: 40px;       /* vertically centers the text */
-    text-align: center;       /* horizontally centers the text */
-    background: #d5d5d5;
-    color: rgb(22, 22, 22);
+    display: block;
+    width: 100%;       /* fills the grid column */
+    max-width: 200px;  /* prevents buttons from getting too wide */
+    text-align: center;
+    background: #002faf;
+    color: white;
     border-radius: 8px;
+    padding: 8px 0;
     text-decoration: none;
     font-size: 15px;
     transition: 0.2s;
 }
+
+
+
+.row-seperator {
+    margin-bottom: 40px; /* spacing from next section */
+}
+
+
+
+
+
+
 
 .mathbutton:hover {
     background: #2300a0;
