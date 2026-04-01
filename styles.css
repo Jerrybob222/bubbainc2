@@ -1,6 +1,5 @@
 
 
-
 body{
     margin:0;
     padding-top:60px;
@@ -35,7 +34,7 @@ body{
 }
 
 .home img{
-    height:40px;
+    height:50px;
     width:auto;
 }
 
@@ -115,35 +114,37 @@ body{
 
 /* button for apps */
 
-.row-seperator { display: grid;
-grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-gap: 20px;
-justify-content: center;
-width: 100%;
-box-sizing:border-box;
-padding:0 10px;
+.row-seperator {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* min width 150px, auto-fill horizontally */
+    gap: 20px;             /* space between buttons */
+    justify-content: center; /* center the grid */
+    padding: 0 10px;
+    margin-bottom: 20px;   /* space to next section */
+    box-sizing: border-box;
 }
 
-
 .mathbutton {
-    display: block;          /* ensures block layout */
-    width: 100%;
-    max-width: 200 px;            /* fixed width */
-    height: 40px;            /* fixed height */
-    line-height: 40px;       /* vertically centers the text */
-    text-align: center;       /* horizontally centers the text */
+    display: block;
+    width: 100%;          /* take full width of grid cell */
+    max-width: 200px;     /* optional limit */
+    height: 40px;
+    line-height: 40px;     /* vertical centering */
+    text-align: center;
     background: #d5d5d5;
     color: rgb(22, 22, 22);
     border-radius: 8px;
     text-decoration: none;
     font-size: 15px;
     transition: 0.2s;
+    box-sizing: border-box; /* include padding in width */
 }
 
 .mathbutton:hover {
     background: #2300a0;
     transform: scale(1.05);
 }
+
 
 
 
@@ -163,18 +164,18 @@ padding:0 10px;
     display: flex;
     flex-direction: column; /* stack image and button vertically */
     align-items: flex-end;  /* right-align */
-    margin-bottom:50px;
+    margin-bottom: 15px;
 }
 
 .mascot img {
-    width: 300px; /* or any responsive width */
+    width: 200px; /* or any responsive width */
     max-width: 100%;
     height: auto;
 }
 
 .mascotbutton {
     display: block;
-    width: 300px;              /* takes the width of the parent (.mascot) */
+    width: 200px;              /* takes the width of the parent (.mascot) */
     text-align: center;       /* centers the text */
     background: #002faf;
     color: white;
